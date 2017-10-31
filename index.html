@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+  <title>Assign-02</title>
+</head>
+<body>
+  <header>
+    <h1>Firebase Exercise</h1>
+  </header>
+  <section class="main">
+  <div class="container">
+    <div class="inner">
+    <h2>Students</h2>
+      <form id="add">
+        <input id="name" type="text" placeholder="Name" class="box">
+        <input id="age" type="text" placeholder="Age" class="box">
+        <input id="city" type="text" placeholder="City" class="box">       
+        <button id="insert">insert</button>        
+      </form>
+      <form id="change">
+        <button id="update" class="displayNone">update</button>
+      </form>
+      <div id="history"></div>
+    </div>
+  </div>
+  </section>  
+  <script src="app.js"></script>
+</body>
+</html>

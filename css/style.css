@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+
+html {
+  background-color: #fff;
+}
+
+body{
+  margin: 20px;
+  padding: 0px;
+  border: 2px solid #f4f4f4;
+  background: #f4f4f4;
+  font-family: 'Lato', sans-serif;
+}
+header{
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background: #3f3f3f;
+}
+footer{   
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  padding: 1rem; 
+  border-top: solid 6px darkorange;
+}
+header h1{
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-weight: 900;
+  margin: 0;
+  color: #ffffff;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.icon{
+  width: 30%;
+  height: auto;
+  margin: 0 35%;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  justify-content: center;
+}
+input, select, textarea{
+  line-height: 2.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;  
+}
+select{
+  padding:2px;
+}
+.box{
+  width: 100%;
+  margin: .3rem auto;
+  padding: .2rem .5rem;
+}
+h2{
+  text-align: center;  
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+form{
+  width: 100%;
+}
+button{
+  margin: 3% 37.5%;
+  width: 25%;  
+  padding: .6rem 0;
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+button.edit, button.delete{
+  margin: 3% 2.5%;
+  width: 95%;  
+  padding: .2rem 0;
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 2rem;
+  border: 0;
+  appearance: none;
+  -moz-appearance: none;
+  color: #ffffff;
+}
+button#insert {
+  background: #3f3f3f;
+  color: #ffffff;
+  border: 0;
+  line-height: 2.3rem;
+  appearance: none;
+}
+button.delete {
+  background: #ff5630;
+}
+button.edit {
+  background: #82d850;
+}
+button#update {
+  background: #3dd2c8;
+  color: #ffffff;
+  border: 0;
+  line-height: 2.3rem;
+  appearance: none;
+}
+.display{
+  margin: 1rem;
+  padding: .5rem;
+  background: white;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  width: 20%;
+  text-align: left;
+  padding: 8px;
+  text-transform: capitalize;
+}
+tr:nth-child(even) {
+  background-color: rgba(63, 63, 63, .1);
+}
+#history p {
+  text-align: center;
+  color: #ff5630;
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.displayNone{
+  display: none;  
+}
+.visually-hidden { /*https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html*/
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 601px) {
+  body{
+    font-size: .8rem;
+    background: darkgray;
+  }
+  h1{
+    font-size: 1.2rem;
+  }
+  h2{
+    display: none;
+  }
+  input, textarea, select{
+    font-size: .675rem;
+    box-sizing: border-box;
+  }
+  .container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  section{
+    margin: 0;
+  }
+}
