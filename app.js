@@ -1,5 +1,5 @@
 firebase.initializeApp({
-	databaseURL: 'https://test-eb50e.firebaseio.com/'
+	databaseURL: ''
 })
 
 const db = firebase.database()
