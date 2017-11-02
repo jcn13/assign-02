@@ -39,7 +39,7 @@ function add() {
 }
 
 function getDB(){ 
-	ref.once('value', data => {		
+	ref.on('value', data => {		
     let html
     students = data.val()
     if(students === null){    
