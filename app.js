@@ -12,7 +12,7 @@ let id
 
 insert.addEventListener('submit', (e) => { 	
   	e.preventDefault()  	
-  	add( input() )
+  	create.add( ref, input() )
 })
 
 update.addEventListener('submit', (e) => {  
